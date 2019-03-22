@@ -1,62 +1,110 @@
+
 body{
-	background-color: black;
-	margin: 0;
+	margin:0%;
+	padding: 0%;
 }
+	
 
-@font-face{
-    font-family: 'union';
-    src: url('Union-Regular.otf') format('otf'), }
+     @font-face{
+    font-family: 'radio';
+    src: url('fonts/Circular_Std-Book_web.woff') format('woff'); }
 
-    @font-face{
-    font-family: 'union-italic';
-    src: url('Union-Italic.otf') format('otf'), }
-
-    @font-face{
-    font-family: 'union-Bold';
-    src: url('Union-Bold.otf') format('otf'), }
 
 
 h1{
-	font-family: 'union', sans-serif;
+	font-family: 'radio';
 	font-weight: normal;
 	color: white;
-	font-size: 1.6em;
-	line-height: 1em;
-	text-decoration: none;
-	margin-bottom: 0;
-	margin-top: 2%;
+	font-size: 11em;
 	text-align: center;
-	-webkit-text-stroke: 1px black;
-		letter-spacing: -0.02em;
+	margin: 0%;
+	padding: 0%;
+	letter-spacing: -0.03em;
+	    text-rendering: geometricPrecision !important;
+    -webkit-font-smoothing: antialiased; 
+}
+
+
+li {
+	 font-family: 'radio';
+	font-weight: normal;
+	color: rgb(20,0,255);;
+	list-style: none;
+	font-size: 3.3em;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 18%;
 	    text-rendering: geometricPrecision !important;
     -webkit-font-smoothing: antialiased;
-
 }
-
-p, a {
-	font-family: 'union', sans-serif;
-	font-weight: normal;
-	color: black;
-	font-size: 3em;
-	line-height: 1.05em;
+a{
 	text-decoration: none;
-	padding: 0;
+	color: white;
+}
+ul{
+	width: 100%;
+	padding: 0%;
+	margin-top: 10%;
+}
+.one {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(20,0,255);
+	float: left;
+	overflow: scroll;
 	margin: 0;
+	padding: 0;
 }
 
-.im{
-	width: 100vw;
-	position: fixed;	
+
+
+.col1{
+	width: 50vw;
+	float: left
 }
 
-img{
-	display: block;
-  margin:0 auto;
-  margin-top: 10%;
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-#fix{
-	position: fixed;
-	width: 100vw;
-	z-index: 10;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
 }
