@@ -30,10 +30,9 @@ li {
 	font-weight: normal;
 	color: rgb(20,0,255);;
 	list-style: none;
-	font-size: 3.3em;
+	font-size: 2em;
+	line-height: 1em;
 	text-decoration: none;
-	text-align: center;
-	margin-top: 18%;
 	    text-rendering: geometricPrecision !important;
     -webkit-font-smoothing: antialiased;
 }
@@ -41,11 +40,11 @@ a{
 	text-decoration: none;
 	color: white;
 }
+
 ul{
-	width: 100%;
-	padding: 0%;
-	margin-top: 10%;
+	padding: 2%;
 }
+
 .one {
 	width: 100%;
 	height: 100vh;
@@ -59,10 +58,19 @@ ul{
 
 
 .col1{
-	width: 50vw;
+	width: 80vw;
 	float: left
 }
 
+.col2{
+	width: 20%;
+	float: left
+}
+
+iframe{
+	width: 100%;
+	height: 100vh;
+}
 
 
 
