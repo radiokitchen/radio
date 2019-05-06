@@ -30,8 +30,9 @@ li {
 	font-weight: normal;
 	color: rgb(20,0,255);;
 	list-style: none;
-	font-size: 2em;
+	font-size: 7em;
 	line-height: 1em;
+	margin-top: 18%;
 	text-decoration: none;
 	    text-rendering: geometricPrecision !important;
     -webkit-font-smoothing: antialiased;
